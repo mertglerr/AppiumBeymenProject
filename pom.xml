@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.alistirma</groupId>
+    <artifactId>AppiumBeymenProject</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>24</maven.compiler.source>
+        <maven.compiler.target>24</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+
+    <dependencies>
+
+        <!-- Appium için gerekli Java kütüphanesi -->
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>8.5.1</version>
+        </dependency>
+
+        <!-- Selenium WebDriver tüm fonksiyonlarıyla (tek sürüm, çakışmasız) -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.11.0</version>
+        </dependency>
+
+        <!-- Cucumber'da step definition dosyalarında Java kodu yazmak için gerekli -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.14.0</version>
+        </dependency>
+
+        <!-- Cucumber senaryolarını JUnit ile çalıştırmak için gerekli bağlayıcı -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>7.14.0</version>
+        </dependency>
+
+        <!-- Cucumber çekirdek bileşenleri (runner, step discovery vb. iç logic) -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>7.14.0</version>
+        </dependency>
+
+        <!-- Gherkin sözdizimini anlaması için gerekli: Feature file parser -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>gherkin</artifactId>
+            <version>26.2.0</version>
+        </dependency>
+
+        <!-- Gherkin mesajlarını Cucumber içinde iletmek için gerekli altyapı -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-gherkin-messages</artifactId>
+            <version>7.14.0</version>
+        </dependency>
+
+        <!-- Cucumber reporting ve mesajlaşma altyapısı -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>messages</artifactId>
+            <version>22.0.0</version>
+        </dependency>
+
+        <!-- Unit testleri yazmak ve çalıştırmak için klasik JUnit 4 frameworkü -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Uzak WebDriver oturumlarını yönetmek için (örneğin Selenium Grid) -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-remote-driver</artifactId>
+            <version>4.11.0</version>
+        </dependency>
+
+        <!-- Apache POI Core -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.2.3</version>
+        </dependency>
+
+        <!-- Apache POI for Excel (.xlsx) support -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.36</version>
+        </dependency>
+
+        <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.18.0</version>
+    </dependency>
+
+
+    </dependencies>
+
+</project>
