@@ -12,10 +12,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import Utilities.Methods.*;
-import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Assert.*;
 import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import java.util.List;
 import java.util.Random;
@@ -31,7 +33,7 @@ public class BeymenStepDefinition {
     ProductPage productPage = new ProductPage();
     CartPage cartPage= new CartPage();
 
-    Logger logger = Logger.getLogger(BeymenStepDefinition.class);
+    private static final Logger logger = LoggerFactory.getLogger(BeymenStepDefinition.class);
     @Given("kullanici Beymen uygulamasini acar")
     public void kullanici_beymen_uygulamasini_acar() {
 
